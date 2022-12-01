@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -21,6 +22,13 @@ code {
 .main-container{
   width: 500px;
   margin:auto;
+  margin: 20px 0 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-h1{
+  margin: 10px 0 0 0;
 }
 nav{
   /* border: 1px solid red; */
@@ -46,7 +54,7 @@ ul li {
   height: 50px;
   width: 90%;
   margin: 0 0 0 20px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .panel button{
@@ -58,45 +66,164 @@ ul li {
 .product-catalog{
   position: absolute;
   width: 90%;
-  height: 350px;
-  margin: 0 0 0 20px;
-  border: 1px solid yellowgreen;
-  top: 25%;
-  left: 2%;;
+  height: 395px;
+  margin: 0 0 0 5px;
+  border: 1px solid silver;
+  top: 23%;
+  left: 1%;
+  overflow-y: scroll;
 }
 
 .product-container{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  width: 700px;
-  height: 10%;
+  width: 1119px;
+  /* height: fit-content; */
+  /* border: 1px solid violet; */
+ margin-left: 0;
+ margin-bottom: -16px;
 }
-.product-child{
-  border: 1px solid darkgray;
-  width: 100px;
-  height: 30px;
-}
-.headline{
-  width: 520px;
-  border: 1px solid red;
-  margin: 50px 0 0 0;
-}
-.headline li{
-  font-weight: bolder;
-  border: 1px solid red;
+.grid-btn-edit{
+  background-color: gray;
+  border: none;
+  border-radius: 2px;
   width: fit-content;
+  height: fit-content;
+  margin-right: 5px;
+  padding: 5px;
+}
+.grid-btn-delete{
+  background-color: red;
+  border: none;
+  border-radius: 2px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+}
+.product-container:nth-child(even){
+  background-color: #fff;
+}
+.product-container:nth-child(odd){
+  background-color: lightgray;
+}
+.product-child1{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid darkgray;
+  width: 199px;
+  height: 35px;
+  margin-top: 0;
+  margin-left: 0;
+  /* margin-bottom: 0; */
+  padding: 5px;
+}
+.product-child2{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid darkgray;
+  width: 218px;
+  height: 35px;
+  margin-top: 0;
+  margin-left: 0;
+  padding: 5px;
+}
+.product-child3{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid darkgray;
+  width: 132px;
+  height: 35px;
+  margin-top: 0;
+  margin-left: 0;
+  padding: 5px;
+}
+.product-child4{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid darkgray;
+  width: 160px;
+  height: 35px;
+  margin-top: 0;
+  margin-left: 0;
+  padding: 5px;
+}
+.product-child5{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid darkgray;
+  width: 200px;
+  height: 35px;
+  margin-top: 0;
+  margin-left: 0;
+  padding: 5px;
+}
+.product-child6{
+  border: 1px solid darkgray;
+  width: 148px;
+  height: 35px;
+  margin-top: -16px;
+  margin-left: 0;
+  padding: 5px;
+}
+
+#headline{
+  width: 1120px;
+  margin: 0 0 0 -41px;
+}
+#headline li{
+  font-weight: bolder;
+  border: 1px solid silver;
+  width: fit-content;
+  height: 34px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 85px;
 }
 
 .product-catalog-inner:nth-child(odd){
   background-color:darkgrey;
 } 
 
+.btn-toggle-filter{
+  margin: 25px 0 0 0;
+  width: 60px;
+  height: 30px;
+  background: transparent;
+  border: 1px gray solid;
+  border-radius: 2px;
+}
+
 .filter-form{
-  margin-bottom: 0;
-  border: 1px solid red;
+  margin: 10px 0 0 20px;
+  /* border: 1px solid red; */
   height: 32px;
 }
+
+.filter-name-field{
+  width: 160px;
+  margin: 0 5px 0 5px;
+}
+#filter-price-field{
+  width: 100px;
+  margin: 0 5px 0 5px;
+}
+
+.btn-apply{
+  width: 80px;
+  height: 26px;
+  background: transparent;
+  border: 1px gray solid;
+  border-radius: 2px;
+}
+
+
+
 
 .create-btn{
   position: absolute;
@@ -133,7 +260,9 @@ hr {
   margin-top: 0;
 }
 
-
+.the-form-element  label{
+  font-weight: 600;
+}
 
 .the-form input[type="text"], input[type="number"], input[type="date"]{
   border: 1px solid lightslategrey;

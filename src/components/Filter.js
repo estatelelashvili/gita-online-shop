@@ -14,6 +14,7 @@ const Filter = ({ onFilter }) => {
     <form className='filter-form' onSubmit={onSubmit}>
       <label>Name:</label>
       <input
+        className='filter-name-field'
         type='text'
         value={name}
         onChange={(e) => {
@@ -22,6 +23,7 @@ const Filter = ({ onFilter }) => {
       />
       <label>and Price Between:</label>
       <input
+        id='filter-price-field'
         type='number'
         value={priceFrom}
         onChange={(e) => {
@@ -30,13 +32,14 @@ const Filter = ({ onFilter }) => {
       />
       <label>and:</label>
       <input
+        id='filter-price-field'
         type='number'
         value={priceTo}
         onChange={(e) => {
           setPriceTo(e.target.value);
         }}
       />
-      <input type='submit' value='Apply' />
+      <input className='btn-apply' type='submit' value='Apply' />
     </form>
   );
 };

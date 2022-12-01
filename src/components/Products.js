@@ -29,8 +29,8 @@ const Products = ({ products, count, onDelete, onGetProduct }) => {
   return (
     <div>
       <div className='panel'>
-        <h1>Products</h1>{' '}
-        <button onClick={() => both()}>
+        <h1 className='main-h1'>Products</h1>{' '}
+        <button className='btn-toggle-filter' onClick={() => both()}>
           {showFilter ? 'Hide Filter' : 'Show Filter'}
         </button>
       </div>
@@ -38,8 +38,7 @@ const Products = ({ products, count, onDelete, onGetProduct }) => {
       {showFilter && <Filter onFilter={filterProduct} />}
       <div className='product-catalog-container'>
         <div className='product-catalog'>
-          <h2>{count === 0 ? 'No Products to Show. Add Products.' : ''}</h2>
-          <ul className='headline'>
+          <ul id='headline'>
             <li>Product Name</li>
             <li>Product Number</li>
             <li>Color</li>
@@ -47,7 +46,7 @@ const Products = ({ products, count, onDelete, onGetProduct }) => {
             <li>Modified Date</li>
             <li>Actions</li>
           </ul>
-
+          {count === 0 ? <h2>No Products to Show. Add Products.</h2> : ''}
           {products
             .filter((x) => {
               // if (!showFilter) {

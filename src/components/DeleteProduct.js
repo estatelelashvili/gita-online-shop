@@ -61,12 +61,7 @@ const DeleteProduct = ({ onDelete, currentProduct }) => {
             </Link>
             <Outlet />
           </button>
-          <button
-            className='btn-cancel-back'
-            onClick={() => {
-              onDelete(currentProduct.id);
-            }}
-          >
+          <button className='btn-cancel-back'>
             {' '}
             <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
               Cancel - Back to List

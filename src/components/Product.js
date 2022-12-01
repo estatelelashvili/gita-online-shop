@@ -4,16 +4,31 @@ import { Outlet, Link } from 'react-router-dom';
 const Product = ({ product, onDelete, onGetProduct }) => {
   return (
     <div className='product-container'>
-      <h3 className='product-child'>{product.name} </h3>
-      <p className='product-child'>{product.price}</p>
-      <p className='product-child'>{product.date}</p>
-      <div className='product-child'>
-        <span onClick={() => onGetProduct(product)}>
-          <Link to='editproduct'>Edit</Link>
+      <p className='product-child1'>{product.name} </p>
+      <p className='product-child2'>{product.number} </p>
+      <p className='product-child3'>{product.color} </p>
+      <p className='product-child4'>{product.price}</p>
+      <p className='product-child5'>{product.date}</p>
+      <div className='product-child6'>
+        <button onClick={() => onGetProduct(product)} className='grid-btn-edit'>
+          <Link
+            to='editproduct'
+            style={{ textDecoration: 'none', color: 'white' }}
+          >
+            Edit
+          </Link>
           <Outlet />
-        </span>
-        <button onClick={() => onGetProduct(product)}>
-          <Link to='deleteproduct'>Delete</Link>
+        </button>
+        <button
+          onClick={() => onGetProduct(product)}
+          className='grid-btn-delete'
+        >
+          <Link
+            to='deleteproduct'
+            style={{ textDecoration: 'none', color: 'white' }}
+          >
+            Delete
+          </Link>
           <Outlet />
         </button>
       </div>
