@@ -48,61 +48,63 @@ const Products = ({ products, count, onDelete, onGetProduct }) => {
           </ul>
           {/* {count === 0 ? <h2>No Products to Show. Add Products.</h2> : ''} */}
           {products
-            .filter((x) => {
-              // if (!showFilter) {
-              //   return true;
-              // }
-              // if (name === '' && priceFrom === 0 && priceTo === 0) {
-              //   return true;
-              // }
+            ? products
+                .filter((x) => {
+                  // if (!showFilter) {
+                  //   return true;
+                  // }
+                  // if (name === '' && priceFrom === 0 && priceTo === 0) {
+                  //   return true;
+                  // }
 
-              if (
-                x.name.toLowerCase().includes(name.toLowerCase()) &&
-                +x.price >= +priceFrom &&
-                +x.price <= +priceTo
-              ) {
-                return true;
-              }
+                  if (
+                    x.name.toLowerCase().includes(name.toLowerCase()) &&
+                    +x.price >= +priceFrom &&
+                    +x.price <= +priceTo
+                  ) {
+                    return true;
+                  }
 
-              if (!name) {
-                if (+x.price >= +priceFrom && +x.price <= +priceTo) {
-                  return true;
-                }
-              }
-              if (!name && !priceFrom) {
-                if (+x.price <= +priceTo) {
-                  return true;
-                }
-              }
-              if (!name && !priceTo) {
-                if (+x.price >= +priceFrom) {
-                  return true;
-                }
-              }
-              if (!priceFrom && !priceTo) {
-                if (x.name.toLowerCase().includes(name.toLowerCase())) {
-                  return true;
-                }
-              }
+                  if (!name) {
+                    if (+x.price >= +priceFrom && +x.price <= +priceTo) {
+                      return true;
+                    }
+                  }
+                  if (!name && !priceFrom) {
+                    if (+x.price <= +priceTo) {
+                      return true;
+                    }
+                  }
+                  if (!name && !priceTo) {
+                    if (+x.price >= +priceFrom) {
+                      return true;
+                    }
+                  }
+                  if (!priceFrom && !priceTo) {
+                    if (x.name.toLowerCase().includes(name.toLowerCase())) {
+                      return true;
+                    }
+                  }
 
-              if (!x.name.toLowerCase().includes(name.toLowerCase())) {
-                return false;
-              }
+                  if (!x.name.toLowerCase().includes(name.toLowerCase())) {
+                    return false;
+                  }
 
-              // if (!name && !priceFrom && !priceTo) {
-              //   return false;
-              // }
+                  // if (!name && !priceFrom && !priceTo) {
+                  //   return false;
+                  // }
 
-              return false;
-            })
-            .map((product, id) => (
-              <Product
-                key={id}
-                product={product}
-                onDelete={onDelete}
-                onGetProduct={onGetProduct}
-              />
-            ))}
+                  return false;
+                })
+                .map((product, id) => (
+                  <Product
+                    key={id}
+                    product={product}
+                    onDelete={onDelete}
+                    onGetProduct={onGetProduct}
+                  />
+                ))
+            : ''}
         </div>
         <button className='create-btn'>
           <Link
