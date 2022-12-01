@@ -46,7 +46,7 @@ const Products = ({ products, count, onDelete, onGetProduct }) => {
             <li>Modified Date</li>
             <li>Actions</li>
           </ul>
-          {count === 0 ? <h2>No Products to Show. Add Products.</h2> : ''}
+          {/* {count === 0 ? <h2>No Products to Show. Add Products.</h2> : ''} */}
           {products
             .filter((x) => {
               // if (!showFilter) {
