@@ -69,11 +69,10 @@ function App() {
   const addProduct = (product) => {
     const id = Math.floor(Math.random() * 1000000) + 1;
     const newProduct = { id, ...product };
-    setProducts([...products, newProduct]);
-    localStorage.setItem(
-      'localProductArray',
-      JSON.stringify([...products, newProduct])
-    );
+    products.push(newProduct);
+    // setProducts([...products, newProduct]);
+    setProducts(products);
+    localStorage.setItem('localProductArray', JSON.stringify(products));
   };
 
   const deleteProduct = (id) => {
