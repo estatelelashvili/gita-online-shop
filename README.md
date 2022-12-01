@@ -1,6 +1,6 @@
 # GITA Final Project - Online Shop
 
-The app is deployed on the following link:
+The Online Shop app is deployed on the following link:
 http://estatelelashvili.github.io/gita-online-shop
 
 # Getting Started with Create React App
