@@ -47,11 +47,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //     date: new Date().toUTCString(),
 //   },
 // ];
+// localStorage.removeItem('localProductArray');
 let productArr = [];
-if (localStorage.getItem('localProductArray') !== 'undefined') {
+if (localStorage.getItem('localProductArray') !== null) {
   productArr = JSON.parse(localStorage.getItem('localProductArray'));
 }
-
+// if (localStorage.getItem('localProductArray') !== 'undefined') {
+//   productArr = JSON.parse(localStorage.getItem('localProductArray'));
+// }
+console.log(productArr);
 function App() {
   let [products, setProducts] = useState(productArr);
   // let [filteredProducts, setFilteredProducts] = useState([]);
@@ -70,8 +74,8 @@ function App() {
     const id = Math.floor(Math.random() * 1000000) + 1;
     const newProduct = { id, ...product };
     products.push(newProduct);
-    // setProducts([...products, newProduct]);
     setProducts(products);
+    // setProducts([...products, newProduct]);
     localStorage.setItem('localProductArray', JSON.stringify(products));
   };
 
