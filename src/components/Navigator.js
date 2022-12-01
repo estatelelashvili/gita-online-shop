@@ -5,17 +5,26 @@ export default function Navigator() {
     <header>
       <nav>
         <ul>
+          <li>Online Shop Admin | </li>
           <li>
-            <Link to='/'>Products</Link>
+            <Link to='/' style={{ textDecoration: 'none' }}>
+              Products
+            </Link>
           </li>
           <li>
-            <Link to='/customers'>Customers</Link>
+            <Link to='/customers' style={{ textDecoration: 'none' }}>
+              Customers
+            </Link>
           </li>
           <li>
-            <Link to='/orders'>Orders</Link>
+            <Link to='/orders' style={{ textDecoration: 'none' }}>
+              Orders
+            </Link>
           </li>
           <li>
-            <Link to='/reports'>Reports</Link>
+            <Link to='/reports' style={{ textDecoration: 'none' }}>
+              Reports
+            </Link>
           </li>
         </ul>
       </nav>

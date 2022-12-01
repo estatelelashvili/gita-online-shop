@@ -22,3 +22,85 @@ code {
   width: 500px;
   margin:auto;
 }
+
+ul{
+  display: flex;
+  width: 480px;
+  justify-content: space-between;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.panel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 90%;
+  margin: 0 0 0 20px;
+  border: 1px solid red;
+}
+
+.panel button{
+  width: 100px;
+  height: 32px;
+}
+
+
+.product-catalog{
+  position: absolute;
+  width: 90%;
+  height: 300px;
+  margin: 0 0 0 20px;
+  border: 1px solid yellowgreen;
+  top: 30%;
+  left: 2%;;
+}
+
+.product-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+  height: 10%;
+}
+.product-child{
+  border: 1px solid darkgray;
+  width: 100px;
+  height: 30px;
+}
+.headline{
+  width: 520px;
+  border: 1px solid red;
+  margin: 50px 0 0 0;
+}
+.headline li{
+  font-weight: bolder;
+  border: 1px solid red;
+  width: fit-content;
+}
+
+.product-catalog-inner:nth-child(odd){
+  background-color:darkgrey;
+} 
+
+.filter-form{
+  margin-bottom: 0;
+  border: 1px solid red;
+  height: 50px;
+}
+
+.create-btn{
+  position: absolute;
+  top: 85%;
+  left: 20%;
+  background-color: steelblue;
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  height: 30px;
+  border-radius: 3px;
+}

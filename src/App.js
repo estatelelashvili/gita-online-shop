@@ -52,6 +52,7 @@ if (localStorage.getItem('localProductArray') !== 'undefined') {
 
 function App() {
   let [products, setProducts] = useState(productArr);
+  // let [filteredProducts, setFilteredProducts] = useState([]);
 
   // let [products, setProducts] = useState(
   //   JSON.parse(localStorage.getItem('localProductArray') || {})
@@ -81,6 +82,13 @@ function App() {
     );
   };
 
+  // const filterProduct = (name, priceFrom, priceTo) => {
+  //   setFilteredProducts(
+  //     filteredProducts.filter((product) => product.name !== name)
+  //   );
+  //   console.log(name, priceFrom, priceTo);
+  // };
+
   const editProduct = (product) => {
     let index = products.indexOf(currentProduct);
     let id = index;
@@ -108,6 +116,7 @@ function App() {
               <Products
                 products={products}
                 onDelete={deleteProduct}
+                // onFilter={filterProduct}
                 onGetProduct={getCurrentProduct}
                 count={products.length}
               />
