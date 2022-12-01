@@ -120,7 +120,7 @@ function App() {
                 onDelete={deleteProduct}
                 // onFilter={filterProduct}
                 onGetProduct={getCurrentProduct}
-                count={products.length}
+                count={products.length || 0}
               />
             }
           />
