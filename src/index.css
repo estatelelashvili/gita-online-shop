@@ -19,6 +19,10 @@ code {
   
 }
 
+.shared h1{
+  margin-left: 50px;
+}
+
 .main-container{
   width: 500px;
   margin:auto;

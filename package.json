@@ -1,4 +1,5 @@
 {
+  "homepage": "http://estatelelashvili.github.io/gita-online-shop",
   "name": "gita-online-shop",
   "version": "0.1.0",
   "private": true,
@@ -38,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "react-router-dom": "^6.4.3"
   }
 }
