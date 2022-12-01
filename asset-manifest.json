@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/gita-online-shop/static/css/main.cddce8fb.css",
-    "main.js": "/gita-online-shop/static/js/main.4166efae.js",
+    "main.js": "/gita-online-shop/static/js/main.ff5314d7.js",
     "static/js/787.b96b8cc2.chunk.js": "/gita-online-shop/static/js/787.b96b8cc2.chunk.js",
     "static/media/coming-soon.png": "/gita-online-shop/static/media/coming-soon.e242f6ae3fa5ef8439b4.png",
     "index.html": "/gita-online-shop/index.html",
     "main.cddce8fb.css.map": "/gita-online-shop/static/css/main.cddce8fb.css.map",
-    "main.4166efae.js.map": "/gita-online-shop/static/js/main.4166efae.js.map",
+    "main.ff5314d7.js.map": "/gita-online-shop/static/js/main.ff5314d7.js.map",
     "787.b96b8cc2.chunk.js.map": "/gita-online-shop/static/js/787.b96b8cc2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cddce8fb.css",
-    "static/js/main.4166efae.js"
+    "static/js/main.ff5314d7.js"
   ]
 }
