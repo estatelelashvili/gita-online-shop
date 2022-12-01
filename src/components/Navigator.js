@@ -2,7 +2,7 @@ import { Outlet, Link } from 'react-router-dom';
 
 export default function Navigator() {
   return (
-    <header>
+    <main>
       <nav>
         <ul>
           <li>Online Shop Admin | </li>
@@ -29,6 +29,6 @@ export default function Navigator() {
         </ul>
       </nav>
       <Outlet />
-    </header>
+    </main>
   );
 }

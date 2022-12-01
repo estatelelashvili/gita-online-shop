@@ -12,7 +12,10 @@ const Product = ({ product, onDelete, onGetProduct }) => {
           <Link to='editproduct'>Edit</Link>
           <Outlet />
         </span>
-        <button onClick={() => onDelete(product.id)}>Delete</button>
+        <button onClick={() => onGetProduct(product)}>
+          <Link to='deleteproduct'>Delete</Link>
+          <Outlet />
+        </button>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { Outlet, Link } from 'react-router-dom';
 import Product from './Product';
 import Filter from './Filter';
 import { useState } from 'react';
+import Footer from './Footer';
 const Products = ({ products, count, onDelete, onGetProduct }) => {
   const [name, setName] = useState('');
   let [priceFrom, setPriceFrom] = useState(0);
@@ -114,6 +115,7 @@ const Products = ({ products, count, onDelete, onGetProduct }) => {
           <Outlet />
         </button>
       </div>
+      <Footer />
     </div>
   );
 };

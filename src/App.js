@@ -7,6 +7,8 @@ import Reports from './components/Reports';
 import NoPage from './components/NoPage';
 import AddProduct from './components/AddProduct';
 import EditProduct from './components/EditProduct';
+import DeleteProduct from './components/DeleteProduct';
+
 // import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -134,6 +136,15 @@ function App() {
             element={
               <EditProduct
                 onEdit={editProduct}
+                currentProduct={currentProduct}
+              />
+            }
+          />
+          <Route
+            path='deleteproduct'
+            element={
+              <DeleteProduct
+                onDelete={deleteProduct}
                 currentProduct={currentProduct}
               />
             }
