@@ -4,7 +4,6 @@ import Products from './components/Products';
 import Customers from './components/Customers';
 import Orders from './components/Orders';
 import Reports from './components/Reports';
-import NoPage from './components/NoPage';
 import AddProduct from './components/AddProduct';
 import EditProduct from './components/EditProduct';
 import DeleteProduct from './components/DeleteProduct';
@@ -152,7 +151,18 @@ function App() {
               />
             }
           />
-          <Route path='*' element={<NoPage />} />
+          <Route
+            path='*'
+            element={
+              <Products
+                products={products}
+                onDelete={deleteProduct}
+                // onFilter={filterProduct}
+                onGetProduct={getCurrentProduct}
+                // count={products.length || 0}
+              />
+            }
+          />
         </Route>
       </Routes>
     </BrowserRouter>
