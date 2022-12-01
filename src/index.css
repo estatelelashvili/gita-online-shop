@@ -180,6 +180,74 @@ hr {
   cursor: pointer;
 }
 
+.delete-container-outer{
+  height: 540px;
+  width: 500px;
+  margin: 0 0 0 40px;
+}
+.delete-container{
+  height: 490px;
+  width: 500px;
+  margin: 0;
+}
+.delete-container h1{
+  margin-bottom: 5px;
+}
+.delete-container h3{
+  margin-top: 0;
+  margin-bottom: 15px;
+  background-color: pink;
+  text-align: center;
+  min-height: 30px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.delete-field{
+  display: flex;
+  align-items: center;
+  width: 495px;
+  max-height: 30px;
+}
+
+.delete-field h4{
+  min-width: 158px;
+}
+
+.delete-field p{
+  max-height: 25px;
+  width: 350px;
+  margin-left: 5px;
+}
+
+.delete-btn-group{
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-delete-product{
+  height: 35px;
+  width: fit-content;
+  background-color: red;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.btn-cancel-back{
+  height: 35px;
+  width: fit-content;
+  background-color: rgb(0, 140, 255);
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+
 footer{
   position: absolute;
   top: 100%;
